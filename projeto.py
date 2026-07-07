@@ -1,5 +1,4 @@
-def validar_nome(nome):
-    # Remove os espaços e checa se o que sobrou são apenas letras
+def validar_nome(nome):   
     if nome.replace(" ", "").isalpha():
         return True
     return False 
@@ -27,26 +26,11 @@ while True:
             break
     else:
         print('Tente novamente, apenas números.')
-while True:        
-    dif = input('Qual seu diferencial que agregaria na vaga que está concorrendo?: ')
-    if validar_nome(nome):
-        print("Nome válido e cadastrado com sucesso!")
-        break
-    else:
-        print('Tente novamente, apenas letras')
-while True:        
-    motivo = input('Porque deveriamos te contratar?: ')
-    if validar_nome(nome):
-        print("Nome válido e cadastrado com sucesso!")
-        break
-    else:
-        print('Tente novamente, apenas letras')
-while True:        
-    experiencia = input('Fale breviamente sobre suas experiências profissionais ao longo de sua carreira no mercado de trabalho: ')
-    if validar_nome(nome):
-        print("Nome válido e cadastrado com sucesso!")
-        break
-    else:
-        print('Tente novamente, apenas letras')
         
+dif = input('Qual seu diferencial que agregaria na vaga que está concorrendo?: ')
+        
+motivo = input('Porque deveriamos te contratar?: ')
+
+experiencia = input('Fale breviamente sobre suas experiências profissionais ao longo de sua carreira no mercado de trabalho: ')
+            
 print('Obrigado por preencher as informações, aguarde o retorno da empresa via email! ')
